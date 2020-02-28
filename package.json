@@ -1,5 +1,5 @@
 {
-  "name": "configuration",
+  "name": "configuration-env",
   "version": "1.0.0",
   "description": "Configuration control module",
   "main": "lib/index.js",
