@@ -1,2 +1,2 @@
-# configuration
-Configuration control module
+Manage your Node.js Applications Configurations
+===================================
