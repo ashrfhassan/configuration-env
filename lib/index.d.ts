@@ -1,1 +1,2 @@
-export declare const Greeter: (name: string) => string;
+declare const config: (configName: string, defaultVal: string) => string;
+export default config;

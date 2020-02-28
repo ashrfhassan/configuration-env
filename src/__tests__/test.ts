@@ -1,4 +1,2 @@
 import Config from '../index';
-test('return void', () => {
-
-});
+test('return void', () => {});
