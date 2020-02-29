@@ -1,2 +1,2 @@
-import Config from '../index';
+import { setPath } from '../index';
 test('return void', () => {});
