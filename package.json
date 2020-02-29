@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashrfhassan/configuration.git"
+    "url": "git+https://github.com/ashrfhassan/configuration-env.git"
   },
   "keywords": [
     "conf",
@@ -29,14 +29,15 @@
     "node-config",
     "config-node",
     "env",
-    "environment"
+    "environment",
+    "js-config"
   ],
   "author": "ash hassan <ashrfhassan890@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ashrfhassan/configuration/issues"
+    "url": "https://github.com/ashrfhassan/configuration-env/issues"
   },
-  "homepage": "https://github.com/ashrfhassan/configuration#readme",
+  "homepage": "https://github.com/ashrfhassan/configuration-env#readme",
   "devDependencies": {
     "@types/jest": "^25.1.3",
     "jest": "^25.1.0",
@@ -45,5 +46,9 @@
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.6",
+    "util": "^0.12.2"
   }
 }
