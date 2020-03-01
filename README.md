@@ -1,4 +1,4 @@
-Manage your Node.js Applications Configurations
+Manage your Node.js (Back/Front)end Applications Configurations
 ===================================
 [![NPM](https://nodei.co/npm/configuration-env.svg?downloads=true&downloadRank=true)](https://www.npmjs.com/package/configuration-env/)&nbsp;&nbsp;
 

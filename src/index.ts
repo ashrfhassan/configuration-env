@@ -25,6 +25,7 @@ declare global {
  */
 class Config {
   private static conf: any;
+  private static currentSelectedPath: string;
   private static supportedExt = ['index.js', 'index.ts'];
 
   private static init = (configFile: string) => {
@@ -36,23 +37,25 @@ class Config {
     }
   };
 
-  static setPath = (filePath: string = join(process.cwd(), 'config/index.js')): void => {
+  static setPath = (filePath: string = join(process.cwd(), 'config')): void => {
+    Config.currentSelectedPath = filePath;
     try {
       if (lstatSync(filePath).isDirectory()) {
         const files = Util.loadMatchFilesPaths(filePath, Config.supportedExt);
         filePath = files[0];
+        Config.init(filePath);
       }
     } catch (e) {
-      throw new Error("invalid directory path, couldn't find config file");
+      if (filePath !== join(process.cwd(), 'config'))
+        throw new Error(`invalid directory [${filePath}], couldn't find config file`);
     }
-    Config.init(filePath);
   };
 
   static config = (keyName: string, defaultVal?: any): any => {
     const prop = Util.getProp(Config.conf, keyName);
     if (prop !== undefined) return prop;
     if (defaultVal !== undefined) return defaultVal;
-    throw new Error(`config ${keyName} not set or unreachable`);
+    throw new Error(`config [${keyName}] is unreachable from path [${Config.currentSelectedPath}]`);
   };
 }
 
