@@ -12,7 +12,7 @@ Project Guidelines
 ------------------
 
 * *Simple* - as you only require it and use it globally.
-* *Flexible* - Supporting multiple platforms (Front/back) end.
+* *Flexible* - Supporting multiple platforms (Front/back) end and typescript support.
 * *Lightweight* - Small files
 
 Quick Start
@@ -22,8 +22,10 @@ Quick Start
 ```shell
 $ npm i --save configuration-env Or yarn add configuration-env
 $ mkdir config
-$ touch config/index.js
+$ touch config/index.(js/ts)
 ```
+note: priority will be for .js then .ts
+
 ```js
 module.exports.default = {
     db: {
