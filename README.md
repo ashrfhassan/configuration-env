@@ -1,4 +1,4 @@
-Manage your Node.js (Back/Front)end Applications Configurations
+Manage your Node.js Applications Configurations
 ===================================
 [![NPM](https://nodei.co/npm/configuration-env.svg?downloads=true&downloadRank=true)](https://www.npmjs.com/package/configuration-env/)&nbsp;&nbsp;
 
@@ -12,7 +12,7 @@ Project Guidelines
 ------------------
 
 * *Simple* - as you only require it and use it globally.
-* *Flexible* - Supporting multiple platforms (Front/back) end and typescript support.
+* *Flexible* - Supporting multiple platforms and typescript support.
 * *Lightweight* - Small files
 
 Quick Start

@@ -16,11 +16,6 @@ declare global {
       config: Config;
     }
   }
-
-  interface Window {
-    env: Env;
-    config: Config;
-  }
 }
 
 /**
@@ -66,7 +61,7 @@ class Configuration {
 }
 
 // implicit config & env methods to global objects.
-const globalObj = global || window;
+const globalObj = global;
 
 globalObj.config = Configuration.config;
 
